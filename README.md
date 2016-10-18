@@ -1,5 +1,5 @@
 # Random Quote Generator
-Responsive Random Quote Generator project for [freeCodeCamp](http://freecodecamp.com). 
+Random Quote Generator project for [freeCodeCamp](http://freecodecamp.com). 
 
 ## Technologies/Resources used:
 * HTML
@@ -8,3 +8,4 @@ Responsive Random Quote Generator project for [freeCodeCamp](http://freecodecamp
 * jQuery
 *	[HTML5Boilerplate](https://html5boilerplate.com/)
 * [forismatic.com API](http://forismatic.com/en/api/)
+* Responsive media queries
