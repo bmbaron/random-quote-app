@@ -61,6 +61,11 @@ p#quote-author {
     text-align: right;
 }
 
+.button i {
+    font-size: 1.4rem;
+    vertical-align: bottom;
+    margin-right: .5rem;
+}
 .button:link, .button:visited {
     display: block;
     float: left;
