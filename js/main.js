@@ -22,7 +22,7 @@ document.getElementById("get-quote").onclick = function() {
 			console.log(author);
 			console.log(typeof author);*/
 			$("#quote-display").text(quote);
-			$("#quote-author").text(author);
+			$("#quote-author").text('– ' + author);
 		document.getElementById("tweet").setAttribute("href",tweetData);
 	})
 		// 579329  755520

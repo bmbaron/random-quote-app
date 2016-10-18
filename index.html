@@ -3,13 +3,13 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title></title>
-        <meta name="description" content="">
+        <title>Random Quote Generator</title>
+        <meta name="description" content="Random Quote Generator app, part of FreeCodeCamp front-end certificate">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
-
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab" rel="stylesheet">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
@@ -20,11 +20,20 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <p id="quote-display">Random Quote Generator 1.0</p>
-        <p id="quote-author"></p>
-        <button id="get-quote">Click me</button>
-        <a id="tweet" target="_blank" href="" title="Tweet this quote">Tweet this quote</a>
-
+        <main class="app-wrapper clearfix">
+            <div class="quote-card">
+                <p id="quote-display">Random Quote Generator 1.0</p>
+                <p id="quote-author"></p>
+            </div> <!--//quote-display -->
+            <div class="button-wrapper">
+                <a id="get-quote" class="button" href="#!">New Quote</a>
+                <a id="tweet" class="button twitter" target="_blank" href="https://twitter.com/intent/tweet?text=freeCodeCamp is awesome!" title="Tweet this quote">Tweet Quote</a>
+            </div>
+            <footer>
+                <p>Created by <a href="http://djmccurley.com">Dan McCurley</a></p>
+                <p><a target="_blank" href="http://freecodecamp.com">freeCodeCamp</a></p>
+            </footer>  
+        </main> <!-- /app-wrapper -->      
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
