@@ -1,6 +1,9 @@
-/* Globals and Paul Irish border box*/
+/* Globals, border box and clearfix */
 
-/* color: #FF571D */
+/*  
+    Color palette from Kuler:
+    https://color.adobe.com/Flat-UI-color-theme-2469224/
+*/
 
 html {
   box-sizing: border-box;
@@ -28,7 +31,8 @@ body {
 }
 
 /* Border rule for testing layout*/
-/** {
+/*
+* {
     border: 1px solid red;
 }*/
 
@@ -70,7 +74,7 @@ p#quote-author {
     display: block;
     float: left;
     width: 100%;
-    padding: 6% 1rem 6% 1rem;
+    padding: 1.4rem 1rem 1.4rem 1rem;
     margin-bottom: 1rem;
     background-color: #e74c3c;
     color: #fff;
@@ -113,3 +117,56 @@ footer a:hover, footer a:active, footer a:focus {
     color: rgba(52, 152, 219, 1);
     transition: .2s ease all;
 }
+
+/* MEDIA QUERIES */
+
+/*  
+    modified mobile/portrait view 
+    to contain button width
+*/
+@media (min-width: 450px) {
+    .button-wrapper {
+        width: 15rem;
+        margin: auto;
+    }
+
+    .button:link, .button:visited, 
+    .button:hover, .button:active, 
+    .button:focus {
+        .padding: 1.3rem 1rem 1.3rem 1rem;
+    }
+}
+
+/* landscape/desktop view */
+@media (min-width: 630px) {
+    .app-wrapper {
+        max-width: 800px;
+        margin: auto;
+    }
+
+    .button-wrapper {
+        width: 32rem;
+        float: right;
+    }
+
+    .button:link, .button:visited, 
+    .button:hover, .button:active, 
+    .button:focus {
+        width: 15rem;
+        float: left;
+        margin-left: 1rem;
+    }
+
+    footer {
+        clear:both;
+        text-align: right;
+        padding-top: .5rem;
+    }
+
+    footer p {
+        display: inline;
+
+    }
+
+}
+
