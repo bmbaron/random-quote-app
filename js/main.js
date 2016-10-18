@@ -16,7 +16,7 @@ document.getElementById("get-quote").onclick = function() {
 			if(author === "") {
 				author = "Unknown"; 
 			}
-			//check tweet length and crop if necessary (137 accounts for injected string ' --')
+
 			tweetData = 'https://twitter.com/intent/tweet?text=' + quote + ' --' + author;
 /*		--- troubleshooting console.log outputs -----	
 			console.log(author);
@@ -25,7 +25,8 @@ document.getElementById("get-quote").onclick = function() {
 			$("#quote-author").text('– ' + author);
 		document.getElementById("tweet").setAttribute("href",tweetData);
 	})
-		// 579329  755520
+		// alternate method using crossorigin.me workaround - slower and less reliable than JSONP
+
 	/*$.getJSON("https://crossorigin.me/http://api.forismatic.com/api/1.0/?method=getQuote&format=json&key=" + randomKey + "&lang=en", function(data) {
 		$("#quote-display").text(JSON.stringify(data.quoteText));
 		$("#quote-author").text(JSON.stringify(data.quoteAuthor));
