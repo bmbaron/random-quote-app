@@ -130,10 +130,13 @@ footer a:hover, footer a:active, footer a:focus {
         margin: auto;
     }
 
+    .quote-card{
+        padding: 1rem 2rem;
+    }
     .button:link, .button:visited, 
     .button:hover, .button:active, 
     .button:focus {
-        .padding: 1.3rem 1rem 1.3rem 1rem;
+        padding: 1.3rem 1rem 1.3rem 1rem;
     }
 }
 
